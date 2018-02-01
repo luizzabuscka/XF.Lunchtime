@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF.LunchTime.View.AddView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry x:Name="txtNome" Placeholder="Nome" />
+            <Entry x:Name="txtEndereco" Placeholder="Endereço"/>
+            <Entry x:Name="txtTelefone" Placeholder="Telefone" Keyboard="Telephone"/>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="btnSalvar" Text="Salvar" Clicked="OnSalvar" />
+            </StackLayout> 
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

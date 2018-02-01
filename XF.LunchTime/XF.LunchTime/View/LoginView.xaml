@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF.LunchTime.View.LoginView">
+    <ContentPage.Content>
+        <StackLayout Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="Login" Font="20" HorizontalOptions="Center" />
+            <Entry x:Name="txtUsuario" Text="{Binding UsuarioModel.Nome}"
+                   Placeholder="Usuario" WidthRequest="250" />
+            <Entry x:Name="pwdSenha" Text="{Binding UsuarioModel.Senha}"
+                   Placeholder="Senha" IsPassword="True" WidthRequest="250" />
+            <StackLayout Padding="10" Orientation="Horizontal"
+                         HorizontalOptions="Center" VerticalOptions="Center">
+                <Button x:Name="btnLogin" Text="Entrar" Command="{Binding IsAutenticarCMD}"
+                        CommandParameter="{Binding UsuarioModel}"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
